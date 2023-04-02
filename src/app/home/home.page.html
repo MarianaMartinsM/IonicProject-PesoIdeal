@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+
+  
+</ion-header>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      IMC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+  <ion-item>
+    <ion-label position="floating">Digite sua altura: </ion-label>
+    <ion-input [(ngModel)]="altura"maxlength="5"></ion-input>
+  </ion-item>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-radio-group [(ngModel)]="radioSelecionada">
+      <ion-item>
+        <ion-label>Feminino</ion-label>
+        <ion-radio slot="end" value="fem"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Masculino</ion-label>
+        <ion-radio slot="end" value="masc"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button Default="block" (click)="imc()">IMC</ion-button>
+
+  <ion-label  >{{res}}</ion-label>
+</ion-content>
+
+-->
+
+
+<!-- ----------------------------- --
+
+<ion-content [fullscreen]="false">
+  <ion-item>
+    <ion-label position="floating">Valor da venda:</ion-label>
+    <ion-input [(ngModel)]="textoDigitado"></ion-input>
+  </ion-item>
+
+<ion-content>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="valorSelecionado">
+
+      <ion-item>
+        <ion-label>Pix</ion-label>
+        <ion-radio value="pix"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Débito</ion-label>
+        <ion-radio slot="end" value="debito"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Crédito</ion-label>
+        <ion-radio slot="end" value="credito"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-button Default="block" (click)="valorVenda()">valorVenda</ion-button>
+  <ion-label>{{resultado}}</ion-label>
+
+</ion-content>
+
+
+
+</ion-content>-->
